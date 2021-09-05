@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,42 +9,52 @@
 <body>
     <div class="nav-container">
         <nav class="navbar">
-            <a class="top-navbar" 
+            <a id="nav-about" class="top-navbar" 
             href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">
                 About
             </a>
-            <a class="top-navbar" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">
+            <a id="nav-store" class="top-navbar" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">
                 Store
             </a>
-            <a class="top-navbar" href="https://mail.google.com/mail/?authuser=0&ogbl">
-                Gmail
-            </a>
-            <a class="top-navbar" href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">
-                Images
-            </a>
-            <div class="circle-container">
-                <a class="top-navbar" href="https://www.google.com/intl/en/about/products">
-                    <div class="circle grey-circle">
-                        <img id="apps" src="http://cdn.onlinewebfonts.com/svg/img_53800.png">
-                    </div>            
+            <div class="nav-right">
+                <a id="nav-gmail" class="top-navbar" href="https://mail.google.com/mail/?authuser=0&ogbl">
+                    Gmail
                 </a>
-            </div>
-            <div class="circle-container">
-                <a class="top-navbar" href="">
-                    <p class="circle profile">
-                        G
-                    </p> 
+                <a id="nav-images" class="top-navbar" href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">
+                    Images
                 </a>
-            </div>
-            
+                <div class="circle-container">
+                    <a class="top-navbar" href="https://www.google.com/intl/en/about/products">
+                        <div class="circle grey-circle">
+                            <img id="apps" src="http://cdn.onlinewebfonts.com/svg/img_53800.png">
+                        </div>            
+                    </a>
+                </div>
+                <div id="profile-container" class="circle-container">
+                    <a class="top-navbar" href="">
+                        <p class="circle profile">
+                            G
+                        </p> 
+                    </a>
+                </div>
+            </div>                        
         </nav>
     </div>    
     <div class="logo-container">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>
-    <div class="sbox-container">
-        <input id="searchbox">
-    </div>
+    <div class="sc-container">        
+        <div class="sbox-container">
+            <div class="si-container">
+                <div class="search-icon">
+                    <span class="material-icons">
+                        search
+                    </span>
+                </div>
+            </div>            
+            <input id="searchbox">
+        </div>
+    </div>    
     <div class="button-container">
         <input id="gsearch" class="sbutton" type="button" value="Google Search">
         <input id="ifl" class="sbutton" type="button" value="I'm Feeling Lucky">

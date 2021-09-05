@@ -1,4 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  
 
 body {
     font-family: arial,sans-serif;
@@ -8,11 +35,38 @@ body {
 .navbar {
     display: flex;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
-    height: 60px;
+    left: 0;
+    height: 48px;
     padding: 6px;
     align-items: center;
+}
+
+#nav-about {
+    margin-left: 15px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+#nav-store {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
+}
+
+#nav-gmail {
+    padding-right: 15px;
+}
+
+#nav-images {
+    padding-right: 15px;
 }
 
 a {
@@ -48,9 +102,16 @@ a:hover {
 
 .profile {
     color: white;
-    background-color: purple;
+    background-color: mediumseagreen;
     font-family: Arial, sans-serif;
     font-weight: 500;
+    width: 32px;
+    height: 32px;
+    right: 20px;
+}
+
+#profile-container {
+    padding-right: 15px;
 }
 
 #apps {
@@ -63,7 +124,15 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 30vh;
+    height: 34vh;
+    min-height: 150px;
+    max-height: 290px;
+    width: 100%;
+}
+
+.sc-container {
+    display: flex;
+    padding: 20px;
     width: 100%;
 }
 
@@ -71,8 +140,40 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 54vw;
+    min-width: 360px;
     max-width: 584px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+.si-container {
+    padding-right: 13px;
+}
+
+.search-icon {
+    display: inline-block;
+    user-select: none;
+    line-height: 14px;
+    position: relative;
+    color: rgb(154, 160, 166);
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+
+#searchbox {
+    display: flex;
+    flex: 100%;
+    font-size: 16px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.87);
+    border: none;
+    margin: 0;
+    height: 34px;
+    outline: none;
 }
 
 .button-container {
@@ -105,12 +206,6 @@ input {
     background-color: #f8f9fa;
     border: 1px solid #dadce0;
     color: #202124;
-}
-
-#searchbox {
-    border: none;
-    margin: 0;
-    height: 34px;
 }
 
 #gsearch {
