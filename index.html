@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Google Homepage</title>
+    <link href="stylesheet.css" rel="stylesheet">
 </head>
 <body>
     <div class="nav-container">
-        <nav>
+        <nav class="navbar">
             <a class="top-navbar" 
             href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">
                 About
@@ -20,16 +21,32 @@
             <a class="top-navbar" href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">
                 Images
             </a>
-            <a>
-                <img>
-            </a>
+            <div class="circle-container">
+                <a class="top-navbar" href="https://www.google.com/intl/en/about/products">
+                    <div class="circle grey-circle">
+                        <img id="apps" src="http://cdn.onlinewebfonts.com/svg/img_53800.png">
+                    </div>            
+                </a>
+            </div>
+            <div class="circle-container">
+                <a class="top-navbar" href="">
+                    <p class="circle profile">
+                        G
+                    </p> 
+                </a>
+            </div>
+            
         </nav>
     </div>    
     <div class="logo-container">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </div>
-    <div class="sb-container">
-        <input>
+    <div class="sbox-container">
+        <input id="searchbox">
+    </div>
+    <div class="button-container">
+        <input id="gsearch" class="sbutton" type="button" value="Google Search">
+        <input id="ifl" class="sbutton" type="button" value="I'm Feeling Lucky">
     </div>
 </body>
 </html>

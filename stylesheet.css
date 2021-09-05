@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+    font-family: arial,sans-serif;
+    font-size: 14px;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 60px;
+    padding: 6px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.circle-container {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    display: flex;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grey-circle:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.profile {
+    color: white;
+    background-color: purple;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+}
+
+#apps {
+    width: 16px;
+    height: 16px;
+    filter: opacity(50%);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30vh;
+    width: 100%;
+}
+
+.sbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 584px;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 18px 0px 0px;
+}
+
+input {
+    font-family: Arial, sans-serif;
+}
+
+.sbutton {
+    font-size: 14px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;    
+    cursor: pointer;
+}
+
+.sbutton:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+#searchbox {
+    border: none;
+    margin: 0;
+    height: 34px;
+}
+
+#gsearch {
+    width: 127.1px;
+}
+
+#ifl {
+    width: 142.5px;
+}
